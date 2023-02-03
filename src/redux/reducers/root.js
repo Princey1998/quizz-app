@@ -1,8 +1,12 @@
 import { combineReducers } from "@reduxjs/toolkit";
-import counterReducer from "./counter";
+import authReducer from "./authReducer";
+import quizReducer from "./quizReducer";
+import resultReducer from "./resultReducer"
 
 export const rootReducers = combineReducers(
     {
-        counterReducer
+       authReducer,
+       quizReducer,
+       resultReducer
     }
 )
